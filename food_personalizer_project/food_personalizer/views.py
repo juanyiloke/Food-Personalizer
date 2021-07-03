@@ -4,6 +4,10 @@ from django.shortcuts import render
 import numpy as np
 import django
 
+"""
+Credits to Alex Liu and Justice Tomlinson from the IAI Lab on developing the algorithms which shall serve as baseline from.
+"""
+
 def pull_arm(arm, successes, total_pulls, prob):
   reward = np.random.choice([0,1], p=[1-prob, prob])
   if reward == 1:
